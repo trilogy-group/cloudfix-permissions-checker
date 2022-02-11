@@ -11,3 +11,5 @@ tests:
   expected_result: succeed
   resources: 
   - "*"
+global_limit_to: # These roles and/or users below will be u. Regular expressions are supported
+- "^arn:aws:iam::(\\d{12}):user/(.*)({account_id})(.*)$"
