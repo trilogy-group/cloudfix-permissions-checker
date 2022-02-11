@@ -1,0 +1,13 @@
+tests: 
+- actions: # list of actions to validate
+  - iam:Group*
+  - iam:Policy*
+  - iam:Role*
+  - lambda:Function*
+  - cloudformation:CustomResource*
+  - sns:Topic*  
+  - sns:TopicPolicy*
+  - sns:Policy*  
+  expected_result: succeed
+  resources: 
+  - "*"
